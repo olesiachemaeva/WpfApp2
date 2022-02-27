@@ -1,0 +1,3 @@
+﻿Сборка начата…
+1>------ Сборка начата: проект: WpfApp2, Конфигурация: Debug Any CPU ------
+1>  WpfApp2 -> C:\Users\User\Desktop\Учеба Программированию\wpf2\WpfApp2\WpfApp2\bin\Debug\WpfApp2.exe

@@ -5,54 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Калькулятор 2" Height="500" Width="400" Topmost="True">
-    <Grid>
+    <Grid x:Name="Kalk">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF164CDC" Offset="0.011"/>
+                <GradientStop Color="#FFCA94EA" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition></RowDefinition>
-            
-            
+
+
         </Grid.RowDefinitions>
         <Border Background="AliceBlue"
                 BorderBrush="Gray"
                 BorderThickness="3 3 1 1"
                 Margin="2 0 2 2"
                 Height="80">
-        <TextBlock Text="12 345,678"  FontFamily =" Arial"  FontSize =" 30" TextAlignment="Right"  
-                    Padding="0,10" Margin="10,2,0,2" VerticalAlignment="Bottom">
-            
-        </TextBlock>
+            <TextBlock x:Name="textl"  FontFamily =" Arial"  FontSize =" 30" TextAlignment="Right"  
+                    Padding="0,10" Margin="10,2,0,2" VerticalAlignment="Bottom" >
+               
+            </TextBlock>
         </Border>
-        <UniformGrid Rows="6" Columns="4" Grid.Row="1">
-            <Button Content="%"></Button>
-            <Button Content="CE"></Button>
-            <Button Content="C"></Button>
-            <Button Content="←"></Button>
-            <Button Content="1/x"></Button>
-            <Button Content="x²"></Button>
-            <Button Content="√x"></Button>
-            <Button Content="+"></Button>
-            <Button Content="7" Background="Wheat" ></Button>
-            <Button Content="8" Background="Wheat"></Button>
-            <Button Content="9" Background="Wheat"></Button>
-            <Button Content="x"></Button>
-            <Button Content="4" Background="Wheat"></Button>
-            <Button Content="5" Background="Wheat"></Button>
-            <Button Content="6" Background="Wheat"></Button>
-            <Button Content="-"></Button>
-            <Button Content="1" Background="Wheat"></Button>
-            <Button Content="2" Background="Wheat"></Button>
-            <Button Content="3" Background="Wheat"></Button>
-            <Button Content="+"></Button>
-            <Button Content="+/-" Background="Wheat"></Button>
-            <Button Content="0" Background="Wheat"></Button>
-            <Button Content="." Background="Wheat"></Button>
-            <Button Content="="></Button>
-            
-            
-            
-            
+        <UniformGrid x:Name="Setka" Rows="5" Columns="4" Grid.Row="1">
+            <Button Content="%" Margin="5" FontSize="18" Style="{StaticResource MaterialDesignRaisedDarkButton}"></Button>
+            <Button Content="." Margin="5" FontSize="18" Style="{StaticResource MaterialDesignRaisedDarkButton}"></Button>
+
+            <Button Content="AC" Margin="5" FontSize="18" Style="{StaticResource MaterialDesignRaisedDarkButton}"></Button>
+            <Button Content="/" Margin="5" FontSize="18" Style="{StaticResource MaterialDesignRaisedDarkButton}"></Button>
+            <Button Content="7" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="8" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="9" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="*" Margin="5" FontSize="18" ></Button>
+            <Button Content="4" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="5" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="6" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="-" Margin="5" FontSize="18"></Button>
+            <Button Content="1" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="2" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="3" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="+" Margin="5" FontSize="18" ></Button>
+            <Button Content="(" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black"></Button>
+            <Button Content="0" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black" ></Button>
+            <Button Content=")" Background="#FFF5A5E3" Margin="5" FontSize="18" Foreground="Black" ></Button>
+            <Button Content="=" Margin="5"></Button>
+
+
+
+
         </UniformGrid>
-      
+
     </Grid>
 </Window>
